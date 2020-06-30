@@ -1,0 +1,27 @@
+
+@import "variables";
+
+.function-timing {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    &__edit{
+        width: 100px;
+        margin: 0 10px;
+        text-align: center;
+
+        color: $basic-color;
+    }
+    &__start{
+        width: 100px;
+        margin: 0 10px;
+        text-align: center;
+        color: $basic-color;
+    }
+    &__reset{
+        width: 100px;
+        margin: 0 10px;
+        text-align: center;
+        color: $basic-color;
+}
+}

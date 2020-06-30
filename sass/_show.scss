@@ -1,0 +1,28 @@
+@import "variables";
+
+.show-timing{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    &__hours{
+        width: 100px;
+        height: 140px;
+        margin: 0 10px;
+        border: 1px solid  $basic-color;
+        color: $basic-color;
+    }
+    &__minutes{
+        width: 100px;
+        height: 140px;
+        margin: 0 10px;
+        border: 1px solid  $basic-color;
+        color: $basic-color;
+    }
+    &__seconds{
+        width: 100px;
+        height: 140px;
+        margin: 0 10px;
+        border: 1px solid  $basic-color;
+        color: $basic-color;
+}
+}

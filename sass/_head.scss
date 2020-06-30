@@ -1,0 +1,13 @@
+@import "variables";
+
+.head{
+    height: 30%;
+    width: 90%;
+    margin: 0 auto;
+    &__title{
+        padding-top:150px;
+        text-align: center;
+        color: $basic-color;
+        font-size: $basic-fz*2.5;
+    }
+}
