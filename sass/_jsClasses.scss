@@ -1,0 +1,10 @@
+.btnActive {
+  background-color: white;
+  &:nth-child(1) {
+    color: black;
+  }
+}
+
+.timerActive {
+  background-color: grey;
+}

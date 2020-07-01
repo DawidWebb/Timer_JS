@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/01dfb58d64.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/main.min.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/01dfb58d64.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
     <div class="wrap">
-        <header class="head wrap__head">
-            <h1 class="head__title">Timer</h1>
-        </header>
-        <section class="show-timing wrap__show">
-            <div class="show-timing__hours"></div>
-            <div class="show-timing__minutes"></div>
-            <div class="show-timing__seconds"></div>
-        </section>
-        <section class="name-timing wrap__name">
-            <div class="name-timing__hours">hours</div>
-            <div class="name-timing__minutes">minutes</div>
-            <div class="name-timing__seconds">seconds</div>
-        </section>
-        <section class="function-timing wrap__function">
-            <div class="function-timing__edit"><i class="fas fa-pencil-alt"></i></div>
-            <div class="function-timing__start"><i class="fas fa-play"></i><i class="fas fa-pause"></i></div>
-            <div class="function-timing__reset"><i class="fas fa-undo-alt"></i></div>
-        </section>
-        <section class="wrap__alarm"><i class="fas fa-stopwatch"></i></section>
+      <header class="head wrap__head">
+        <h1 class="head__title">Timer</h1>
+      </header>
+      <section class="show-timing wrap__show">
+        <div class="show-timing__hours"></div>
+        <div class="show-timing__minutes"></div>
+        <div class="show-timing__seconds"></div>
+      </section>
+      <section class="name-timing wrap__name">
+        <div class="name-timing__hours">hours</div>
+        <div class="name-timing__minutes">minutes</div>
+        <div class="name-timing__seconds">seconds</div>
+      </section>
+      <section class="function-timing wrap__function">
+        <div class="function-timing__edit">
+          <i class="fas fa-pencil-alt"></i>
+        </div>
+        <div class="function-timing__start">
+          <i class="fas fa-play"></i><i class="fas fa-pause"></i>
+        </div>
+        <div class="function-timing__reset">
+          <i class="fas fa-undo-alt"></i>
+        </div>
+      </section>
+      <section class="wrap__alarm"><i class="fas fa-stopwatch"></i></section>
     </div>
-    
-</body>
+    <script src="./js/Timer.js"></script>
+    <script src="./js/Edit.js"></script>
+    <script src="./js/Start.js"></script>
+    <!-- <script src="./js/index.js" type="module"></script> -->
+  </body>
 </html>

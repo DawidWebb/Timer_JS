@@ -1,27 +1,37 @@
-
 @import "variables";
 
 .function-timing {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    &__edit{
-        width: 100px;
-        margin: 0 10px;
-        text-align: center;
-
-        color: $basic-color;
-    }
-    &__start{
-        width: 100px;
-        margin: 0 10px;
-        text-align: center;
-        color: $basic-color;
-    }
-    &__reset{
-        width: 100px;
-        margin: 0 10px;
-        text-align: center;
-        color: $basic-color;
-}
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  &__edit {
+    width: 50px;
+    height: 30px;
+    margin: 0 10px;
+    border: 0.5px solid darken(white, 75%);
+    text-align: center;
+    line-height: 30px;
+    color: $basic-color;
+    cursor: pointer;
+  }
+  &__start {
+    width: 50px;
+    height: 30px;
+    margin: 0 10px;
+    border: 0.5px solid darken(white, 75%);
+    text-align: center;
+    line-height: 30px;
+    color: $basic-color;
+    cursor: pointer;
+  }
+  &__reset {
+    width: 50px;
+    height: 30px;
+    margin: 0 10px;
+    border: 0.5px solid darken(white, 75%);
+    text-align: center;
+    line-height: 30px;
+    color: $basic-color;
+    cursor: pointer;
+  }
 }

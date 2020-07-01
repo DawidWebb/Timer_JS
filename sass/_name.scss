@@ -1,26 +1,26 @@
 @import "variables";
 
-.name-timing{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    &__hours{
-        width: 100px;
-        margin: 0 10px;
-        text-align: center;
+.name-timing {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  &__hours {
+    width: 140px;
+    margin: 0 10px;
+    text-align: center;
 
-        color: $basic-color;
-    }
-    &__minutes{
-        width: 100px;
-        margin: 0 10px;
-        text-align: center;
-        color: $basic-color;
-    }
-    &__seconds{
-        width: 100px;
-        margin: 0 10px;
-        text-align: center;
-        color: $basic-color;
-}
+    color: $basic-color;
+  }
+  &__minutes {
+    width: 140px;
+    margin: 0 10px;
+    text-align: center;
+    color: $basic-color;
+  }
+  &__seconds {
+    width: 140px;
+    margin: 0 10px;
+    text-align: center;
+    color: $basic-color;
+  }
 }
