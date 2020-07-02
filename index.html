@@ -20,9 +20,28 @@
         <h1 class="head__title">Timer</h1>
       </header>
       <section class="show-timing wrap__show">
-        <div class="show-timing__hours"></div>
-        <div class="show-timing__minutes"></div>
-        <div class="show-timing__seconds"></div>
+        <input 
+        type="number" 
+        placeholder="00"
+        min="0"
+        max="24"
+        disabled
+        class="show-timing__hours">
+      </input>
+        <input 
+        type="number" 
+        placeholder="00" 
+        min="0"
+        max="60"
+        disabled
+        class="show-timing__minutes"></input>
+        <input 
+        type="number" 
+        placeholder="00" 
+        min="0"
+        max="60"
+        disabled
+        class="show-timing__seconds"></input>
       </section>
       <section class="name-timing wrap__name">
         <div class="name-timing__hours">hours</div>

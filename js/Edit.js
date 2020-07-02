@@ -6,11 +6,23 @@ class Edit extends Timer {
   }
   editTimer = () => {
     this.edit.classList.toggle("btnActive");
-
     this.divHrs.classList.toggle("timerActive");
     this.divMin.classList.toggle("timerActive");
     this.divSec.classList.toggle("timerActive");
+    console.log(this.edit.className);
+
+    this.editTime();
+  };
+  editTime = () => {
+    if (this.edit.className === "function-timing__edit btnActive") {
+      this.divHrs.removeAttribute("disabled");
+      this.divMin.removeAttribute("disabled");
+      this.divSec.removeAttribute("disabled");
+    } else if (this.edit.className === "function-timing__edit") {
+      this.divHrs.setAttribute("disabled", true);
+      this.divMin.setAttribute("disabled", true);
+      this.divSec.setAttribute("disabled", true);
+    }
   };
 }
 const edit = new Edit();
-// export default Edit;
