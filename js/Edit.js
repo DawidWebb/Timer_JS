@@ -9,7 +9,6 @@ class Edit extends Timer {
     this.divHrs.classList.toggle("timerActive");
     this.divMin.classList.toggle("timerActive");
     this.divSec.classList.toggle("timerActive");
-    console.log(this.edit.className);
 
     this.editTime();
   };
