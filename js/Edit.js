@@ -5,6 +5,8 @@ class Edit extends Timer {
     this.edit.addEventListener("click", this.editTimer);
   }
   editTimer = () => {
+    this.editActive = !this.editActive;
+    console.log("edit" + " " + this.editActive);
     this.edit.classList.toggle("btnActive");
     this.divHrs.classList.toggle("timerActive");
     this.divMin.classList.toggle("timerActive");
@@ -24,4 +26,4 @@ class Edit extends Timer {
     }
   };
 }
-const edit = new Edit();
+// const edit = new Edit();

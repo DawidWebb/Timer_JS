@@ -6,5 +6,7 @@ class Timer {
     this.seconds = [];
     this.minutes = [];
     this.hours = [];
+    this.editActive = false;
+    this.startActive = false;
   }
 }

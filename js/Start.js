@@ -1,12 +1,27 @@
-class Start extends Timer {
+class Start extends Edit {
   constructor(props) {
     super(props);
-    this.start = document.querySelector(".function-timing__start");
-    this.onBtn = document.querySelector(".fas .fa-play");
+    this.startDiv = document.querySelector(".function-timing__start");
+    this.onBtn = document.querySelector(".fa-play");
     this.offBtn = document.querySelector(".fa-pause");
-    this.start.addEventListener("click", this.startTimer);
+    this.startDiv.addEventListener("click", this.setTimer);
     this.startStop = false;
   }
+
+  setTimer = () => {
+    console.log("edit" + " " + this.editActive);
+    if (
+      this.editActive === true ||
+      (this.divHrs.value === 0 &&
+        this.divMin.value === 0 &&
+        this.divSec.value === 0)
+    ) {
+      return;
+    } else if (this.editActive === false) {
+      this.startTimer();
+      this.startActive = !this.startActive;
+    }
+  };
 
   startTimer = () => {
     this.startStop = !this.startStop;
@@ -23,8 +38,14 @@ class Start extends Timer {
     }
     if (this.startStop === true) {
       this.start = setInterval(this.timerCalc, 1000);
+      this.onBtn.style.display = "none";
+      this.startDiv.style.backgroundColor = "white";
+      this.offBtn.style.display = "inline-block";
     } else if (this.startStop === false) {
       clearInterval(this.start);
+      this.onBtn.style.display = "inline-block";
+      this.startDiv.style.backgroundColor = "black";
+      this.offBtn.style.display = "none";
     }
   };
 
@@ -36,4 +57,4 @@ class Start extends Timer {
   };
 }
 
-const start = new Start();
+// const start = new Start();
