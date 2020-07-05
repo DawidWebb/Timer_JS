@@ -6,10 +6,11 @@ class Start extends Edit {
     this.offBtn = document.querySelector(".fa-pause");
     this.startDiv.addEventListener("click", this.setTimer);
     this.startStop = false;
+    this.start;
+    this.alarm = false;
   }
 
   setTimer = () => {
-    console.log("edit" + " " + this.editActive);
     if (
       this.editActive === true ||
       (this.divHrs.value === 0 &&
@@ -25,15 +26,17 @@ class Start extends Edit {
 
   startTimer = () => {
     this.startStop = !this.startStop;
-    console.log(this.startStop);
 
     if (this.divSec.value > 0) {
+      this.seconds = [];
       this.seconds.push(this.divSec.value * 1);
     }
     if (this.divMin.value > 0) {
+      this.minutes = [];
       this.minutes.push(this.divMin.value * 1);
     }
     if (this.divHrs.value > 0) {
+      this.hours = [];
       this.hours.push(this.divHrs.value * 1);
     }
     if (this.startStop === true) {
@@ -50,9 +53,39 @@ class Start extends Edit {
   };
 
   timerCalc = () => {
-    if (this.seconds.length > 0) {
-      this.seconds[0]--;
-      this.divSec.value = this.seconds[0];
+    let sec = this.seconds;
+    let min = this.minutes;
+    let hrs = this.hours;
+
+    if (sec[0] > 0) {
+      sec[0]--;
+      this.divSec.value = sec[0];
+    }
+    if (sec[0] === 0 && min[0] > 0) {
+      sec[0] = 60;
+      sec--;
+      min[0] = min[0] - 1;
+      this.divMin.value = min[0];
+    }
+    if (sec[0] === 0 && min[0] === 0 && hrs > 0) {
+      sec[0] = 60;
+      sec--;
+      min[0] = 60;
+      min[0] = min[0] - 1;
+      this.divMin.value = min[0];
+      hrs[0] = hrs[0] - 1;
+      this.divHrs.value = hrs[0];
+    }
+    if (sec[0] === 0) {
+      this.startStop = false;
+      clearInterval(this.start);
+      this.onBtn.style.display = "inline-block";
+      this.startDiv.style.backgroundColor = "black";
+      this.offBtn.style.display = "none";
+      this.alarm = true;
+      console.log(this.alarm);
+
+      const alarm = new Alarm();
     }
   };
 }

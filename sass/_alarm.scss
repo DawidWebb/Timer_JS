@@ -1,10 +1,10 @@
-@import "variables"; 
+@import "variables";
 
-.wrap__alarm{
-
-width: 100px;
-margin: 60px auto;
-font-size: $basic-fz*2;
-text-align: center;
-color: $high-color;
+.wrap__alarm {
+  width: 100px;
+  margin: 60px auto;
+  font-size: $basic-fz * 2;
+  text-align: center;
+  color: $high-color;
+  display: none;
 }
