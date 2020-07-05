@@ -1,13 +1,13 @@
-class Alarm extends Start {
-  constructor(props) {
-    super(props);
+class Alarm {
+  constructor() {
     this.alarmStart;
     this.alarmBtn = document.querySelector(".wrap__alarm");
     this.alarmBtn.addEventListener("click", this.alarmReset);
   }
   alarmStart = () => {
-    if (this.alarm === true) {
-      this.alarmBtn.style.display = "inline-block";
-    }
+    this.alarmBtn.style.display = "block";
+  };
+  alarmReset = () => {
+    this.alarmBtn.style.display = "none";
   };
 }

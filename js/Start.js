@@ -1,13 +1,13 @@
 class Start extends Edit {
   constructor(props) {
     super(props);
+    this.alarm = new Alarm();
     this.startDiv = document.querySelector(".function-timing__start");
     this.onBtn = document.querySelector(".fa-play");
     this.offBtn = document.querySelector(".fa-pause");
     this.startDiv.addEventListener("click", this.setTimer);
     this.startStop = false;
     this.start;
-    this.alarm = false;
   }
 
   setTimer = () => {
@@ -82,10 +82,7 @@ class Start extends Edit {
       this.onBtn.style.display = "inline-block";
       this.startDiv.style.backgroundColor = "black";
       this.offBtn.style.display = "none";
-      this.alarm = true;
-      console.log(this.alarm);
-
-      const alarm = new Alarm();
+      this.alarm.alarmStart();
     }
   };
 }
