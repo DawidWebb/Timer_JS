@@ -2,6 +2,7 @@ class Start extends Edit {
   constructor(props) {
     super(props);
     this.alarm = new Alarm();
+    this.alarmOff;
     this.startDiv = document.querySelector(".function-timing__start");
     this.onBtn = document.querySelector(".fa-play");
     this.offBtn = document.querySelector(".fa-pause");
@@ -83,6 +84,7 @@ class Start extends Edit {
       this.startDiv.style.backgroundColor = "black";
       this.offBtn.style.display = "none";
       this.alarm.alarmStart();
+      this.startActive = false;
     }
   };
 }

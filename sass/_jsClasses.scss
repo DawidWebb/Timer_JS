@@ -18,3 +18,23 @@
 .notToUse {
   opacity: 0.6;
 }
+.shake {
+  animation: shakeIt 0.25s infinite;
+}
+@keyframes shakeIt {
+  0% {
+    transform: translateX(-1px);
+  }
+  25% {
+    transform: translateX(1px);
+  }
+  50% {
+    transform: translateX(-1px);
+  }
+  75% {
+    transform: translateX(1px);
+  }
+  100% {
+    transform: translateX(-1px);
+  }
+}
