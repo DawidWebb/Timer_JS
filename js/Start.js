@@ -1,3 +1,6 @@
+import Edit from "./Edit.js";
+import Alarm from "./Alarm.js";
+
 class Start extends Edit {
   constructor(props) {
     super(props);
@@ -89,4 +92,4 @@ class Start extends Edit {
   };
 }
 
-// const start = new Start();
+export default Start;

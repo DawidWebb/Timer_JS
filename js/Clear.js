@@ -1,3 +1,6 @@
+import Start from "./Start.js";
+import Alarm from "./Alarm.js";
+
 class Clear extends Start {
   constructor(props) {
     super(props);
@@ -17,4 +20,4 @@ class Clear extends Start {
     }
   };
 }
-const clear = new Clear();
+export default Clear;

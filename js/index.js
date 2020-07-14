@@ -1,3 +1,11 @@
-import Edit from "./Edit";
+import Timer from "./Timer.js";
+import Edit from "./Edit.js";
+import Alarm from "./Alarm.js";
+import Start from "./Start.js";
+import Clear from "./Clear.js";
 
-const edit = new Edit();
+
+
+const clear = new Clear();
+
+

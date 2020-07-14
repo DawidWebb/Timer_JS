@@ -10,3 +10,4 @@ class Timer {
     this.startActive = false;
   }
 }
+export default Timer;

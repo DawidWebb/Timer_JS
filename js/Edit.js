@@ -1,3 +1,5 @@
+import Timer from "./Timer.js";
+
 class Edit extends Timer {
   constructor(props) {
     super(props);
@@ -43,4 +45,4 @@ class Edit extends Timer {
     }
   };
 }
-// const edit = new Edit();
+export default Edit
